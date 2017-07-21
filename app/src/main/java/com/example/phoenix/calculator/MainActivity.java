@@ -128,7 +128,9 @@ public class MainActivity extends AppCompatActivity {
                 else if((text.contains("."))&&(rong==false)&&(!text.contains("+"))&&(!text.contains("-"))&&(!text.contains("÷"))&&(!text.contains("×"))){
                     Toast.makeText(getApplicationContext(),"ركز لو سمحت",Toast.LENGTH_SHORT).show();
                 }
-
+                else if(text.indexOf('.')!=text.lastIndexOf('.')){
+                    Toast.makeText(getApplicationContext(),"ركز لو سمحت",Toast.LENGTH_SHORT).show();
+                }
                 else{
                     text+=".";
                     textView.setText(text);
